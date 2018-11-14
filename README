@@ -1,0 +1,20 @@
+# Vue Routes Builder
+
+A very simple module to help build routes for vuejs.
+
+```js
+import router from 'v-routes-builder'
+
+router.path('/login')
+    .meta({})
+    .hook({
+      beforeEnter() {
+
+      }
+    })
+    .name('app:login')
+    .component(() => {})
+
+// You can get the list of routes definition.
+router.getRoutes() // [...]
+```

@@ -1,0 +1,20 @@
+{
+  "name": "v-routes-builder",
+  "version": "0.1.0",
+  "description": "Helps build routes in a cleaner way",
+  "main": "out/index.js",
+  "repository": "https://github.com/heywhy/vue-routes-builder",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "bash ./scripts/build",
+    "clean": "bash ./scripts/clean",
+    "serve:docs": "vuepress dev doc_pages",
+    "build:docs": "vuepress build doc_pages -d docs",
+    "compile": "tsc -p .",
+    "watch": "tsc -w -p ."
+  },
+  "devDependencies": {
+    "vue-router": "^3.0.1"
+  }
+}
