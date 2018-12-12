@@ -1,6 +1,6 @@
 # Vue Routes Builder
 
-A very simple module to help build routes for vuejs.
+A very simple library to help build routes for vuejs.
 
 ```bash
 yarn add v-routes-builder // or

@@ -1,10 +1,11 @@
 import { Dictionary, Router } from ".";
+import { RouteConfig } from "vue-router";
 export declare class Route {
     protected url: string;
     protected _router: Router;
-    _route: {};
+    protected _route: RouteConfig;
     constructor(url: string, _router: Router);
-    get(): {};
+    get(): RouteConfig;
     meta(meta?: Dictionary): Route;
     component(component: any): Route;
     alias(alias: string): Route;

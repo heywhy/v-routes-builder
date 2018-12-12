@@ -12,7 +12,9 @@ var Route = /** @class */ (function () {
     function Route(url, _router) {
         this.url = url;
         this._router = _router;
-        this._route = {};
+        this._route = {
+            path: ''
+        };
         this._route = {
             path: url
         };
