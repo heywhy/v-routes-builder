@@ -1,18 +1,19 @@
-import { Route } from "./route";
+import { Route } from "./route"
+import { RouteConfig } from 'vue-router'
 
 export interface Dictionary {
-  [key: string]: any;
+  [key: string]: any
 }
 
 export class Router {
-  private _routes: Route[] = [];
+  private _routes: Route[] = []
 
   private _contexts: any[] = []
 
   path(path: string): Route {
-    const modifier = new Route(path, this);
-    this.currentRouter.routes.push(modifier);
-    return modifier;
+    const modifier = new Route(path, this)
+    this.currentRouter.routes.push(modifier)
+    return modifier
   }
 
   get routes() {
@@ -24,7 +25,7 @@ export class Router {
     return this._contexts[length - 1] || this
   }
 
-  getRoutes() {
+  getRoutes(): RouteConfig[] {
     return this.currentRouter.routes
       .map((route: any) => route.get())
   }
@@ -38,4 +39,4 @@ export class Router {
   }
 }
 
-export default new Router();
+export default new Router()
