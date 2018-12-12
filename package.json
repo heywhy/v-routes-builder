@@ -1,6 +1,6 @@
 {
   "name": "v-routes-builder",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Helps build routes in a cleaner way",
   "main": "out/index.js",
   "repository": "https://github.com/heywhy/vue-routes-builder",
