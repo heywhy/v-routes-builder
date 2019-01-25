@@ -1,11 +1,12 @@
 {
   "name": "v-routes-builder",
   "version": "0.1.1",
-  "description": "Helps build routes in a cleaner way",
+  "description": "Helps build routes in a cleaner way for vue-router.",
   "main": "out/index.js",
   "repository": "https://github.com/heywhy/vue-routes-builder",
   "license": "MIT",
   "private": false,
+  "keywords": ["vue", "vue-router", "vue router", "router"],
   "scripts": {
     "build": "bash ./scripts/build",
     "clean": "bash ./scripts/clean",
